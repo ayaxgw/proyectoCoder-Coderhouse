@@ -3,7 +3,7 @@ from django.shortcuts import render
 from appcoder.models import Curso
 
 def inicio(request):
-    return HttpResponse("Estas en el inicio")
+    return render(request, "appcoder/inicio.html")
 
 def cursos(request):
     return HttpResponse("Estas en cursos")
